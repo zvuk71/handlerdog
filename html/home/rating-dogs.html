@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Рейтинг собак породистих собак України | Handler.Dog</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.css">
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../../assets/vendor/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="../../assets/css/theme.css">
+
+    <!-- CSS Front Doc -->
+    <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="u-header u-header--navbar-bg u-header--bg-transparent-xl u-header--sticky-top-xl u-header--starter">
+        <!-- Alert Info -->
+        <div class="alert bg-primary text-white text-center font-size-1 rounded-0 mb-0" role="alert">
+            <span class="fas fa-child"></span> Розкажіть про свої товари і послуги <span class="fas fa-heart"></span> - це побачать тисячі власників собак, тренерів і хендлерів <span class="fas fa-dog"></span> <span class="fas fa-heart"></span>
+            <span class="fas fa-bone"></span> <a class="font-weight-semi-bold link-white" href="classic.html#">Замовити рекламу</a>
+        </div>
+        <!-- End Alert Info -->
+        <div class="u-header__section bg-primary">
+            <div id="logoAndNav" class="container-fluid">
+                <!-- Nav -->
+                <nav class="js-mega-menu navbar navbar-expand-xl u-header__navbar u-header__navbar--no-space">
+                    <div class="u-header--starter__logo">
+                        <!-- White Logo -->
+                        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white" href="index.html" aria-label="Handler.Dog">
+                            <span class="u-header__navbar-brand-text">handler.dog</span>
+                        </a>
+                        <!-- End White Logo -->
+
+                        <!-- Default Logo -->
+                        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed" href="index.html" aria-label="handler.dog">
+                            <span class="u-header__navbar-brand-text">handler.hog</span>
+                        </a>
+                        <!-- End Default Logo -->
+
+                        <!-- Responsive Toggle Button -->
+                        <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                <span id="hamburgerTrigger" class="u-hamburger__box">
+                  <span class="u-hamburger__inner"></span>
+                </span>
+              </button>
+                        <!-- End Responsive Toggle Button -->
+                    </div>
+
+                    <!-- Navigation -->
+                    <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+                        <!-- Search -->
+                        <form class="form-inline input-group input-group-sm shadow-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="docsSearch">
+                <span class="fas fa-search"></span>
+                                </span>
+                            </div>
+                            <input class="js-hs-docs-search form-control" type="text" placeholder="Шукати..." aria-label="Шукати..." aria-describedby="docsSearch" data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+                        </form>
+                        <!-- End Search -->
+
+                        <ul class="navbar-nav u-header__navbar-nav">
+                            <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link" href="index.html"><span class="fas fa-home"></span></a>
+                            </li>
+
+                            <!-- Changelog -->
+                            <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+                                <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Рейтинги</a>
+
+                                <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
+                                    <li><a class="nav-link u-header__sub-menu-nav-link" href="rating-owners.html">Власники</a></li>
+                                    <li><a class="nav-link u-header__sub-menu-nav-link" href="rating-handlers.html">Хендлери</a></li>
+                                    <li><a class="nav-link u-header__sub-menu-nav-link" href="rating-trainers.html">Тренери</a></li>
+                                    <div class="text-center"><span class="u-divider u-divider--xs u-divider--text"><span class="fas fa-bone"></span></span>
+                                    </div>
+                                    <li><a class="nav-link u-header__sub-menu-nav-link" href="shows.html">Виставки</a></li>
+                                </ul>
+                            </li>
+                            <!-- End Changelog -->
+
+                            <li class="nav-item u-header__nav-last-item">
+                                <a class="btn btn-sm btn-light transition-3d-hover" href="sign-in.html">Зареєструватися</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Navigation -->
+                </nav>
+                <!-- End Nav -->
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main class="space-top-xl-3">
+        <div class="text-center">
+            <h1 class="font-weight-semi-bold">Рейтинг породистих собак України</h1>
+            <p class="text-dark font-weight-normal mb-0">Данні за 2019 і загальні</p>
+        </div>
+
+        <!-- Start Miracle tab -->
+        <div class="card">
+            <div class="card-header py-4 px-0 mx-4">
+            </div>
+            <div class="card-body p-4">
+                <!-- Activity Table -->
+                <div class="table-responsive-md u-datatable">
+                    <table class="js-datatable table table-borderless u-datatable__striped u-datatable__content u-datatable__trigger mb-5" data-dt-info="#datatableInfo" data-dt-search="#datatableSearch" data-dt-entries="#datatableEntries" data-dt-page-length="12" data-dt-is-responsive="false"
+                        data-dt-is-show-paging="true" data-dt-details-invoker=".js-datatabale-details" data-dt-select-all-control="#invoiceToggleAllCheckbox" data-dt-pagination="datatablePagination" data-dt-pagination-classes="pagination mb-0" data-dt-pagination-items-classes="page-item"
+                        data-dt-pagination-links-classes="page-link" data-dt-pagination-next-classes="page-item" data-dt-pagination-next-link-classes="page-link" data-dt-pagination-next-link-markup='<span aria-hidden="true">»</span>' data-dt-pagination-prev-classes="page-item"
+                        data-dt-pagination-prev-link-classes="page-link" data-dt-pagination-prev-link-markup='<span aria-hidden="true">«</span>'>
+                        <thead>
+                            <tr class="text-uppercase font-size-1">
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                                        <input type="checkbox" class="custom-control-input" id="invoiceToggleAllCheckbox">
+                                        <label class="custom-control-label" for="invoiceToggleAllCheckbox"> <span class="text-hide">Рейтинг</span></label>
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Родовід
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Кличка
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Бали 2019
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Порода
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Вік
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Місто
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Власник
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Хендлер
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Тренер
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Шоу-2019
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Всі шоу
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                        Всі бали
+                                        <div class="ml-2">
+                                            <span class="fas fa-angle-up u-datatable__thead-icon"></span>
+                                            <span class="fas fa-angle-down u-datatable__thead-icon"></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="font-weight-medium">
+                                    <div class="d-flex align-items-center">
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-size-1">
+                            <tr class="js-datatabale-details">
+
+                                <td class="align-middle">
+                                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                                        <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
+                                        <label class="custom-control-label" for="invoiceCheckbox01">
+                <span class="btn btn-sm btn-icon btn-soft-secondary rounded-circle mr-2">
+        <span class="btn-icon__inner font-weight-medium">1</span>
+      </span>
+              </label>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-secondary">UKU.0306723</td>
+                                <td class="align-middle">
+
+                                    <div class="media align-items-center">
+                                        <a href="../account/profile-dog.html">
+                                            <span class="u-sm-avatar mr-2">
+          <img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Image Description">
+        </span>
+                                            <span class="font-weight-medium text-primary"> Ronald Lucky Wizard Iz Doma Magri'z</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-primary font-weight-semi-bold">30</td>
+                                <td class="align-middle text-secondary">Cairn Terrier</td>
+                                <td class="align-middle text-secondary">2</td>
+                                <td class="align-middle text-secondary">Київ</td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-owner.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-handler.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-trainer.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">3</td>
+                                <td class="align-middle text-secondary">8</td>
+                                <td class="align-middle text-secondary">23</td>
+
+                                <td class="align-middle text-secondary">
+                                    <a class="btn btn-xs btn-icon btn-soft-secondary transition-3d-hover" href="javascript:;" data-toggle="tooltip" data-placement="top" title="Edit">
+                                        <span class="fas fa-pen btn-icon__inner"></span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr class="js-datatabale-details">
+
+                                <td class="align-middle">
+                                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                                        <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
+                                        <label class="custom-control-label" for="invoiceCheckbox01">
+                <span class="btn btn-sm btn-icon btn-soft-secondary rounded-circle mr-2">
+        <span class="btn-icon__inner font-weight-medium">2</span>
+      </span>
+              </label>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-secondary">UKU.0306723</td>
+                                <td class="align-middle">
+
+                                    <div class="media align-items-center">
+                                        <a href="../account/profile-handler.html">
+                                            <span class="u-sm-avatar mr-2">
+          <img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Image Description">
+        </span>
+                                            <span class="font-weight-medium text-primary"> Ronald Lucky Wizard Iz Doma Magri'z</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-primary font-weight-semi-bold">30</td>
+                                <td class="align-middle text-secondary">Cairn Terrier</td>
+                                <td class="align-middle text-secondary">2</td>
+                                <td class="align-middle text-secondary">Київ</td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-owner.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-handler.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-trainer.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">3</td>
+                                <td class="align-middle text-secondary">8</td>
+                                <td class="align-middle text-secondary">23</td>
+
+                                <td class="align-middle text-secondary">
+                                    <a class="btn btn-xs btn-icon btn-soft-secondary transition-3d-hover" href="javascript:;" data-toggle="tooltip" data-placement="top" title="Edit">
+                                        <span class="fas fa-pen btn-icon__inner"></span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr class="js-datatabale-details">
+
+                                <td class="align-middle">
+                                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                                        <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
+                                        <label class="custom-control-label" for="invoiceCheckbox01">
+                <span class="btn btn-sm btn-icon btn-soft-secondary rounded-circle mr-2">
+        <span class="btn-icon__inner font-weight-medium">3</span>
+      </span>
+              </label>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-secondary">UKU.0306723</td>
+                                <td class="align-middle">
+
+                                    <div class="media align-items-center">
+                                        <a href="../account/profile-handler.html">
+                                            <span class="u-sm-avatar mr-2">
+          <img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Image Description">
+        </span>
+                                            <span class="font-weight-medium text-primary"> Ronald Lucky Wizard Iz Doma Magri'z</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-primary font-weight-semi-bold">30</td>
+                                <td class="align-middle text-secondary">Cairn Terrier</td>
+                                <td class="align-middle text-secondary">2</td>
+                                <td class="align-middle text-secondary">Київ</td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-owner.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-handler.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-trainer.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">3</td>
+                                <td class="align-middle text-secondary">8</td>
+                                <td class="align-middle text-secondary">23</td>
+
+                                <td class="align-middle text-secondary">
+                                    <a class="btn btn-xs btn-icon btn-soft-secondary transition-3d-hover" href="javascript:;" data-toggle="tooltip" data-placement="top" title="Edit">
+                                        <span class="fas fa-pen btn-icon__inner"></span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr class="js-datatabale-details">
+
+                                <td class="align-middle">
+                                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                                        <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
+                                        <label class="custom-control-label" for="invoiceCheckbox01">
+                <span class="btn btn-sm btn-icon btn-soft-secondary rounded-circle mr-2">
+        <span class="btn-icon__inner font-weight-medium">4</span>
+      </span>
+              </label>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-secondary">UKU.0306723</td>
+                                <td class="align-middle">
+
+                                    <div class="media align-items-center">
+                                        <a href="../account/profile-handler.html">
+                                            <span class="u-sm-avatar mr-2">
+          <img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Image Description">
+        </span>
+                                            <span class="font-weight-medium text-primary"> Ronald Lucky Wizard Iz Doma Magri'z</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-primary font-weight-semi-bold">30</td>
+                                <td class="align-middle text-secondary">Cairn Terrier</td>
+                                <td class="align-middle text-secondary">2</td>
+                                <td class="align-middle text-secondary">Київ</td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-owner.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-handler.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-trainer.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">3</td>
+                                <td class="align-middle text-secondary">8</td>
+                                <td class="align-middle text-secondary">23</td>
+
+                                <td class="align-middle text-secondary">
+                                    <a class="btn btn-xs btn-icon btn-soft-secondary transition-3d-hover" href="javascript:;" data-toggle="tooltip" data-placement="top" title="Edit">
+                                        <span class="fas fa-pen btn-icon__inner"></span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr class="js-datatabale-details">
+
+                                <td class="align-middle">
+                                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                                        <input type="checkbox" class="custom-control-input" id="invoiceCheckbox01">
+                                        <label class="custom-control-label" for="invoiceCheckbox01">
+                <span class="btn btn-sm btn-icon btn-soft-secondary rounded-circle mr-2">
+        <span class="btn-icon__inner font-weight-medium">5</span>
+      </span>
+              </label>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-secondary">UKU.0306723</td>
+                                <td class="align-middle">
+
+                                    <div class="media align-items-center">
+                                        <a href="../account/profile-handler.html">
+                                            <span class="u-sm-avatar mr-2">
+          <img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Image Description">
+        </span>
+                                            <span class="font-weight-medium text-primary"> Ronald Lucky Wizard Iz Doma Magri'z</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-primary font-weight-semi-bold">30</td>
+                                <td class="align-middle text-secondary">Cairn Terrier</td>
+                                <td class="align-middle text-secondary">2</td>
+                                <td class="align-middle text-secondary">Київ</td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-owner.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-handler.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">
+
+                                    <span class="u-sm-avatar mr-2">
+          <a href="../account/profile-trainer.html"><img class="img-fluid rounded-circle" src="../../assets/img/32x32/img3.jpg" alt="Марія Маздогін" title="Марія Маздогін"></a>
+        </span>
+
+                                </td>
+                                <td class="align-middle text-secondary">3</td>
+                                <td class="align-middle text-secondary">8</td>
+                                <td class="align-middle text-secondary">23</td>
+
+                                <td class="align-middle text-secondary">
+                                    <a class="btn btn-xs btn-icon btn-soft-secondary transition-3d-hover" href="javascript:;" data-toggle="tooltip" data-placement="top" title="Edit">
+                                        <span class="fas fa-pen btn-icon__inner"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Activity Table -->
+
+                <!-- Pagination -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <nav id="datatablePagination" aria-label="Activity pagination"></nav>
+
+                    <small id="datatableInfo" class="text-secondary"></small>
+                </div>
+                <!-- End Pagination -->
+            </div>
+        </div>
+        <!-- End Miracle Tab -->
+
+        <!-- Sending ID to others -->
+        <div id="SVGfiles" class="svg-preloader bg-light position-relative z-index-2">
+            <div class="container space-2">
+                <!-- Title -->
+                <div class="mb-7">
+                    <span class="d-block text-secondary">Відмітьте рядки з хендлерами і впишіть в поле їх ID-коди через кому</span>
+                    <h1 class="text-primary font-weight-semi-bold">Відправка даних хендлерів зв'язаним користувачам</h1>
+                </div>
+                <!-- End Title -->
+
+                <!-- Search Jobs Form -->
+                <form class="row mb-2">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <!-- Input -->
+                        <label class="d-block">
+      <span class="h6 d-block text-dark font-weight-semi-bold mb-0">Знайдіть профіль користувача сайту</span>
+    </label>
+                        <div class="js-focus-state">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Ім'я, або ID-код..." aria-label="Ім'я, або ID-код..." aria-describedby="keywordInputAddon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+            <span class="fas fa-search" id="keywordInputAddon"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+                    </div>
+
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <!-- Input -->
+                        <label class="d-block">
+      <span class="h6 d-block text-dark font-weight-semi-bold mb-0">Введіть ID-код користувачів через кому</span>
+    </label>
+                        <div class="js-focus-state">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Наприклад: s-32,o-7" aria-label="Наприклад: s-32,o-7" aria-describedby="locationInputAddon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+            <span class="fas fa-paper-plane" id="locationInputAddon"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+                    </div>
+
+                    <div class="col-lg-2 align-self-lg-end">
+                        <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Відправити</button>
+                    </div>
+                    <!-- End Checkbox -->
+                </form>
+                <!-- End Search Jobs Form -->
+            </div>
+
+            <!-- SVG Icon -->
+            <div class="d-none d-lg-block w-100 position-absolute bottom-0 right-0 z-index-n1 max-width-27">
+                <figure class="ie-files">
+                    <img class="js-svg-injector" src="../../assets/svg/illustrations/files.svg" alt="Image Description" data-parent="#SVGfiles">
+                </figure>
+            </div>
+            <!-- End SVG Icon -->
+        </div>
+        <!-- End Sending ID to others -->
+
+    </main>
+    <!-- ========== END MAIN ========== -->
+
+    <!-- Go to Top -->
+    <a class="js-go-to u-go-to" href="javascript:;" data-position='{"bottom": 15, "right": 15 }' data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+        <span class="fas fa-arrow-up u-go-to__inner"></span>
+    </a>
+    <!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../../documentation/assets/vendor/prism/prism.js"></script>
+
+    <!-- JS Front -->
+    <script src="../../assets/js/hs.core.js"></script>
+    <script src="../../assets/js/components/hs.header.js"></script>
+    <script src="../../assets/js/components/hs.focus-state.js"></script>
+    <script src="../../assets/js/components/hs.go-to.js"></script>
+    <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="../../assets/js/components/hs.validation.js"></script>
+    <script src="../../assets/js/components/hs.show-animation.js"></script>
+    <script src="../../assets/js/components/hs.svg-injector.js"></script>
+    <script src="../../assets/js/components/hs.selectpicker.js"></script>
+    <script src="../../assets/js/components/hs.datatables.js"></script>
+    <script src="../../assets/js/components/hs.range-datepicker.js"></script>
+    <script src="../../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function() {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#header'));
+
+            // initialization of focus state
+            $.HSCore.components.HSFocusState.init();
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of malihu scrollbar
+            var $scrollbar = $('.js-scrollbar');
+            $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+            $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of datatables
+            $.HSCore.components.HSDatatables.init('.js-datatable');
+
+            // initialization of range datepicker
+            $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+
+            // initialization of select picker
+            $.HSCore.components.HSSelectPicker.init('.js-select');
+
+            // initialization of form validation
+            $.HSCore.components.HSValidation.init('.js-validate', {
+                rules: {
+                    confirmPassword: {
+                        equalTo: '#signupPassword'
+                    }
+                }
+            });
+        });
+
+        $(window).on('load', function() {
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 1199.98,
+                hideTimeOut: 0
+            });
+
+            // initialization of svg injector module
+            $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+            // initialization of autocomplet
+            $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+        });
+    </script>
+</body>
+
+</html>
